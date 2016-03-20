@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body th:fragment="uploadHistory">
+	<table>
+		<tr>
+			<td colspan="3"><h3>Previous Uploads</h3></td>
+		</tr>
+		<tr>
+			<td> ID:</td>
+			<td> Date Uploaded:</td>
+			<td> Location of File:</td>
+		</tr>
+		<p th:each="log : ${logs}">
+		<tr>
+			<td><div th:text="${log.uploadID}"></div></td>
+			<td><div th:text="${log.uploadDate}"></div></td>
+			<td><div th:text="${log.uploadLocation}"></div></td>
+		</tr>
+		</p>	
+	</table>
+</body>
+</html>
