@@ -4,15 +4,10 @@
 <link rel="stylesheet" type="text/css" href="/css/menu.css"></link>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script type="text/javascript" src="/scripts/toggle.js"></script>
-<script>
-$(function(){ 
-$('#upload').addClass('current-item');
-	});
-</script>
 </head>
 <body>
 <div th:replace="fragments/header :: header"></div>
-<div th:replace="fragments/uploadNewFile :: uploadNewFile"></div>
+<div th:replace="fragments/UploadSuccess :: UploadSuccess"></div>
 <div th:replace="fragments/footer :: footer">&copy; 2013 The Static Templates</div>
 </body>
 </html>

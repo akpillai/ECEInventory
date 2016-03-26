@@ -9,7 +9,7 @@ import javax.persistence.*;
  * 
  */
 @Entity
-public class Test implements Serializable {
+public class Temp implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	private String col_Acq_Date;
@@ -62,7 +62,7 @@ public class Test implements Serializable {
 
 	private String col_Tag_Type;
 
-	public Test() {
+	public Temp() {
 	}
 
 	public String getCol_Acq_Date() {

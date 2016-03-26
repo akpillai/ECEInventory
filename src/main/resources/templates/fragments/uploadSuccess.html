@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body th:fragment="UploadSuccess">
+	<table>
+		<tr>
+			<td colspan="3"><h3>Data Uploaded</h3></td>
+		</tr>
+		<tr>
+			<td> ID:</td>
+			<td> Date Uploaded:</td>
+			<td> Location of File:</td>
+		</tr>
+		<p th:each="data : ${uploadedData}">
+		<tr>
+			<td><div th:text="${data.col_Ptag}"></div></td>
+			<td><div th:text="${data.col_Owner}"></div></td>
+			<td><div th:text="${data.col_Serial_Number}"></div></td>
+		</tr>
+		</p>	
+	</table>
+</body>
+</html>

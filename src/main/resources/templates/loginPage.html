@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<link rel="stylesheet" type="text/css" href="/css/menu.css"></link>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="/scripts/toggle.js"></script>
+<script>
+$(function imgsize(){ var W = $(window).width(),
+    H = $(window).height();
+$('.imageBack').height(H-150).width(W);
+$('.LoginButton').height(150).width(W);
+	});
+$(window).resize(function(){
+	var W = $(window).width(),
+    H = $(window).height();
+$('.imageBack').height(H-150).width(W);
+$('.LoginButton').height(150).width(W);
+});
+</script>
+</head>
+<body background="maroon;">
+<form  th:action="@{/home}" method="post">
+	<img src="/../images/VT2.jpg" class="imageBack"><button type ="submit" class="LoginButton" style="background-color: Maroon"><font color="OrangeRed" style="font-family:fantasy;"><h1><b>LOGIN</b></h1></font></button></img>
+</form>
+</body>
+</html>
